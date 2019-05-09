@@ -3,17 +3,22 @@
 /* Generic styles */
 header {
 	background-color: #3E88AF;
-	position:relative;
+	position:fixed;
 	top:0;
 	left:0;
 	width:100%;
 }
 
 header h1 {
-	background-color: #90C4D7;
 	color: #FFFF33;
-	text-align: center;
 	font: 200% helvetica;
+	position: fixed;
+	left:45%;
+	font-style: bold;
+}
+
+header img {
+	float: left;
 }
 
  /*Styles to create a responsive nav bar */
@@ -35,6 +40,7 @@ nav li a {
 	text-align: center;
 	padding: 14px 16px;
 	font: 100% helvetica;
+	text-decoration: none;
 }
 
 nav li a.active {
@@ -42,36 +48,90 @@ nav li a.active {
 	color:black;
 }
 
+
 @media screen and (max-width:600px) {
 	nav li {float:none; color: black;}
+	.gallery img {float:left; width:100%;}
 }
 
 body {
- background-color: #FFFFFF;
- color: #3E88AF;
+	background-color: #FFFFFF;
+	color: #3E88AF;
+	margin-top: 8%;
 }
 
 
+h2 {
+	text-align:center;
+	font: 175% helvetica;
+}
+
+h3 {
+	text-align:center;
+	font: 125% helvetica;
+}
+
 p {
- color: #3E88AF;
- text-align: center;
- font: 100% helvetica;
+	color: #3E88AF;
+	text-align: center;
+	font: 100% helvetica;
+}
+
+th {
+	text-align:center;
+	font: 100% helvetica;
+}
+	
+ul {
+	text-align:center;
+	font: 100% helvetica;
 }
 
 footer {
- background-color: #90C4D7;
- color: #FFFF33;
- position: fixed;
- left:0;
- bottom:0;
- width:100%;
- font:100% helvetica;
+	background-color: #3E88AF;
+	color: #FFFF33;
+	position: fixed;
+	left:0;
+	bottom:0;
+	width:100%;
+	font:100% helvetica;
+}
+
+footer ul{
+	list-style:none;
+}
+
+.content {
+	text-align:center;
+	padding:1%;
+}
+
+.row {
+	display: flex;
+}
+
+.gallery img {
+	float:left;
+	width:25%;
+}
+
+.images {
+	float:left;
+	width:25%;
 }
 
 .right {
 	float:right;
+	width:30%;
+	padding:1%;
 }
 
 .left {
 	float:left;
+	width:30%;
+	padding:1%;
+}
+
+.center {
+	float:center;
 }
